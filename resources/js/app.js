@@ -1,13 +1,15 @@
-require('./bootstrap');
+require("./bootstrap");
 
-window.Vue = require('vue');
+window.Vue = require("vue");
 
-import UsersTable from './components/UsersTable.vue';
+import ListUsers from "./components/ListUsers.vue";
+import PageLoading from "./components/PageLoading.vue";
 
+Vue.component("PageLoading", PageLoading);
 
 new Vue({
-    el: '#app',
+    el: "#app",
     components: {
-        UsersTable
+        ListUsers
     }
 });

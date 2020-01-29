@@ -2,6 +2,6 @@
 
 @section('content')
 
-<users-table users="{{ $users }}"></users-table>
+<list-users all-users="{{$users}}"></list-users>
 
 @endsection
